@@ -1,0 +1,39 @@
+.menu-container {
+  max-width: 700px;
+  margin: 2em auto;
+  padding: 1.5em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-container h2, .menu-container h3 {
+  margin-bottom: 0.5em;
+}
+
+.category-buttons {
+  margin-bottom: 1em;
+}
+
+.category-buttons button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-list label {
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.action-buttons {
+  margin-bottom: 1em;
+}
+
+.action-buttons button {
+  margin-right: 8px;
+}

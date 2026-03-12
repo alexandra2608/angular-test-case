@@ -1,0 +1,34 @@
+<div class="menu-container">
+  <button class="back-button" routerLink="/">← Back</button>
+
+  <h2>Selected items {{ selectedNames }}</h2>
+  <p>Total selected: {{ count }}</p>
+  <p>Total price: {{ total }}</p>
+
+  <hr>
+
+  <div class="category-buttons">
+    <button
+      *ngFor="let category of menu"
+      (click)="selectCategory(category)"
+      [class.active]="category === currentCategory"
+    >
+      {{ category.category }} ({{ getCategoryCount(category) }} items, {{ getCategoryTotal(category) }})
+    </button>
+  </div>
+
+  <div class="action-buttons">
+    <button (click)="selectAll(currentCategory)">Select All</button>
+    <button (click)="clearCategory(currentCategory)">Clear</button>
+  </div>
+
+  <h3>{{ currentCategory.category }}</h3>
+
+  <div class="item-list">
+    <label *ngFor="let item of currentCategory.items">
+      <input type="checkbox" [checked]="isSelected(item)" (change)="toggle(item, $event)" />
+      {{ item.name }} - {{ item.value }}
+    </label>
+  </div>
+
+</div>
