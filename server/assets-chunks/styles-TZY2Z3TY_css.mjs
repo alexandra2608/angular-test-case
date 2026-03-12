@@ -1,2 +1,0 @@
-export default `body{font-family:Arial,sans-serif;background-color:#f5f5f5;margin:0;padding:0}h1,h2,h3{color:#333;margin:.5em 0}hr{margin:1em 0;border:0;border-top:1px solid #ccc}button{padding:6px 12px;border:none;border-radius:4px;cursor:pointer;background-color:#e0e0e0;transition:background .2s}button:hover{background-color:#d5d5d5}button.active{background-color:#7e54c5;color:#fff}
-`;
